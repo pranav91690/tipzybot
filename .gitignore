@@ -1,0 +1,39 @@
+.DS_Store
+nginx-web-server/nginx.conf
+
+# Ignore the FantasyWeb App folders!!
+nginx-web-server/webapps/fantasywebapp/build/*
+nginx-web-server/webapps/fantasywebapp/node_modules/*
+nginx-web-server/webapps/fantasywebapp/.vscode
+nginx-web-server/webapps/fantasywebapp/*.log*
+nginx-web-server/webapps/fantasywebapp/.DS_Store
+nginx-web-server/webapps/fantasywebapp/.eslintcache
+nginx-web-server/webapps/fantasywebapp/package-lock.json
+nginx-web-server/webapps/fantasywebapp/yarn.lock
+nginx-web-server/webapps/fantasywebapp/README.md
+
+# Ignore the mongodb folder!! <-- As it contains only the data
+mongo/data/
+
+# Ignore our local files
+fantasy2021/manually_managed_data_and_imp_files/*
+fantasy2021/.DS_Store
+
+# Ignore the python app venv 
+fantasy2021/fantasyapi/venv/*
+fantasy2021/fantasyapi/.DS_Store
+fantasy2021/fantasyapi/.idea
+
+fantasy2021/fantasyscheduler/venv/*
+fantasy2021/fantasyscheduler/.DS_Store
+fantasy2021/fantasyscheduler/.idea
+
+
+
+
+
+
+
+
+
+
