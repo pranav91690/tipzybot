@@ -2,7 +2,7 @@
 nginx-web-server/nginx.conf
 
 # Ignore the FantasyWeb App folders!!
-nginx-web-server/webapps/fantasywebapp/build/*
+#nginx-web-server/webapps/fantasywebapp/build/*
 nginx-web-server/webapps/fantasywebapp/node_modules/*
 nginx-web-server/webapps/fantasywebapp/.vscode
 nginx-web-server/webapps/fantasywebapp/*.log*
