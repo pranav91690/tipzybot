@@ -38,8 +38,11 @@ async def getScores(request):
                         if k == "points":
                             current_points[k] += v
                         elif k == "categories":
-                            for category in v:
-                                current_points[k][category] += category
+                            for category,value in v.items():
+                                if not category in current_points[k]:
+                                    current_points[k][category] = 0
+                                current_points[k][category] += int(value)
+
 
                 cumulative_points[owner]["players"][score["player_id"]] = current_points
 
