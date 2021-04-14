@@ -48,8 +48,8 @@ def calculatePoints(stats):
         catches = int(stats["catch"]) * 10
     if "run_out" in stats:
         runouts = int(stats["run_out"]) * 10
-    if "stumped" in stats:
-        stumpings = int(stats["stumped"]) * 10
+    if "stump" in stats:
+        stumpings = int(stats["stump"]) * 10
     if "cbowled" in stats:
         catches = catches + int(stats["cbowled"]) * 10
 
