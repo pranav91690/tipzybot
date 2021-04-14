@@ -36,7 +36,7 @@ def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firs
     res["cbowled"] = re_cbolwed
     res["run_out"] = re_run_out
     res["catch"] = re_catch
-    res["stump"] : re_stump
+    res["stump"] = re_stump
 
 
     for k, r in res.items():
