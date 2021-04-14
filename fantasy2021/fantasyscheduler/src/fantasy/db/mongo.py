@@ -10,31 +10,15 @@ def addMatches(matches):
     fantasy.matches.bulk_write(operations)
 
 def addPlayers(players):
-    fantasy.players.insert_many(players)
+    operations = []
+    for player in players:
+        operations.append(UpdateOne({"_id": player["_id"]}, {"$set": player}, upsert=True))
 
-def searchPlayerRegex(playerName):
-    return fantasy.players.find_one({
-        'name' : {'$regex': playerName}
-    })
+    fantasy.players.bulk_write(operations)
 
-def searchPlayer(playerName):
-    return fantasy.players.find_one({
-        'name' : playerName
-    })
-
-def addTeams(teams):
-    fantasy.teams.insert_many(teams)
 
 def getMatches():
     return fantasy.matches.find({})
-
-def getMatchesBetweenDates(start,end):
-    return fantasy.matches.find({
-        'time' : {
-            '$gte' : start,
-            '$lte' : end
-        }
-    })
 
 def addScores(scores):
     operations = []

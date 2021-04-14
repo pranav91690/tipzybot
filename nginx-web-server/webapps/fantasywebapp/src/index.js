@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import thunk from "redux-thunk";
-import "semantic-ui-css/semantic.min.css";
+import "semantic-ui-css/semantic.css";
 
 // npm install --save redux react-redux redux-think react-router-dom lodash
 

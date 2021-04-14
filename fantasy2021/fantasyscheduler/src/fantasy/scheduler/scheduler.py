@@ -8,7 +8,7 @@ from fantasy.utils.getAndUploadMatchInfo import addAllMatches
 india = pytz.timezone('Asia/Calcutta')
 
 def start(sched):
-    print("Uploading Matches")
+    print("Uploading Matches and Scheduling to run it for playoffs")
     addAllMatches()
     print("Getting Job List")
     jobList = getJobList()

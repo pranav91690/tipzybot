@@ -9,31 +9,44 @@ class ScoresList extends React.Component {
     );
     const scores = sorted_scores.map((score) => {
       return (
-        <tr>
+        <tr key={score.owner}>
           <td class="left aligned">{score.owner}</td>
           <td class="right aligned">{score.points}</td>
         </tr>
       );
     });
 
+    const map = {
+      1: "Operation Kill Sree",
+      2: "The OG",
+    };
+
+    const customMessage = {
+      1: "Hope Sree Crashes and Burns",
+      2: "Kothari is a fat bastard",
+    };
+
     return (
-      <div class="four column grid">
-        <div class="row"></div>
+      <div class="ui one column grid container">
         <div class="row"></div>
         <div class="row"></div>
         <div class="row">
+          <h2>{map[this.props.leagueid]}</h2>
+        </div>
+        <div class="row"></div>
+        <div class="row">
           <div class="column">
-            <table class="ui table">
+            <table class="ui unstackable table">
               <thead>
                 <tr>
                   <th class="left aligned">Owner</th>
-                  <th class="right aligined">Points</th>
+                  <th class="right aligned">Points</th>
                 </tr>
               </thead>
               <tbody>{scores}</tbody>
               <tfoot>
                 <tr>
-                  <th>Hope Sree Crashes and Burns</th>
+                  <th>{customMessage[this.props.leagueid]}</th>
                   <th></th>
                 </tr>
               </tfoot>
@@ -48,7 +61,7 @@ class ScoresList extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getScores();
+    this.props.getScores(this.props.leagueid);
   }
 }
 

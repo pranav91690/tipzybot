@@ -64,4 +64,15 @@ async def getScores(request):
         error = {"error" : str(e)}
         return web.Response(text=json_util.dumps(error), content_type="application/json")
 
+async def getTopFreeAgents(request):
+    print("Getting top free agents")
+    try:
+        mongo_client = request.app['mongoclient']
 
+
+        print("Done Getting Score")
+        return web.Response(text=json_util.dumps(), content_type="application/json")
+    except Exception as e:
+        print("Received an error while getting top free agents -> " + str(e))
+        error = {"error": str(e)}
+        return web.Response(text=json_util.dumps(error), content_type="application/json")

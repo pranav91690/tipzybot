@@ -1,9 +1,12 @@
 import React from "react";
-import BackEnd from "../../api/BackEnd";
 import ScoresList from "./ScoresList";
-import ScoreList from "./ScoresList";
+import { useParams, useRouteMatch } from "react-router-dom";
+
 const Scores = () => {
-  return <ScoresList />;
+  let { leagueid } = useParams();
+  let { path, url } = useRouteMatch();
+
+  return <ScoresList leagueid={leagueid} path={path} url={url} />;
 };
 
 export default Scores;

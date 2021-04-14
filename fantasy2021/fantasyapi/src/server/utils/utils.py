@@ -1,8 +1,28 @@
-from fantasy.db.mongo import addMatches
+import json
+import os
 import requests
 from bs4 import BeautifulSoup
 
-def addAllMatches():
+def getPlayers():
+    players = []
+    with open('server/utils/data/players.json') as json_file:
+        players = json.load(json_file)
+    return players
+
+def getLeagues():
+    leagues = []
+    for filename in os.listdir("server/utils/data/leagues"):
+        if filename.endswith("json"):
+            owners = []
+            with open(os.path.join("server/utils/data/leagues",filename),'r') as file:
+                owners = json.load(file)
+
+            for owner in owners:
+                leagues.append(owner)
+
+    return leagues
+
+def getMatches():
     r = requests.get("https://www.cricbuzz.com/cricket-series/3472/indian-premier-league-2021/matches")
     soup = BeautifulSoup(r.content, "html.parser")
 
@@ -40,4 +60,5 @@ def addAllMatches():
             match["number"] = match_number
             match_number += 1
             matches.append(match)
-    addMatches(matches)
+
+    return matches

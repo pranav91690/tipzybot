@@ -1,0 +1,290 @@
+[
+    {
+        "league_num": 2,
+        "owner": "Dhruv",
+        "players": [
+            {
+                "end": 56,
+                "player_id": "11813",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "587",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "10420",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "1446",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "1593",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "11808",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "12926",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "9311",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8733",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8271",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "2258",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "7662",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "1739",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "6507",
+                "price": "0",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "10225",
+                "price": "",
+                "start": 0
+            }
+        ]
+    },
+    {
+        "league_num": 2,
+        "owner": "Ram",
+        "players": [
+            {
+                "end": 56,
+                "player_id": "7825",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8683",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "10744",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "9585",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "624",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "576",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "10276",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8117",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "2195",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "7909",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8333",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "1413",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "13088",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "7910",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "1726",
+                "price": "",
+                "start": 0
+            }
+        ]
+    },
+    {
+        "league_num": 2,
+        "owner": "Kots",
+        "players": [
+            {
+                "end": 56,
+                "player_id": "8989",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "544",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "11427",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8095",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "7915",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "9647",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8520",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "247",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "9406",
+                "price": "0",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "6557",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "9693",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "11195",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "370",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "8313",
+                "price": "0",
+                "start": 0
+            },
+            {
+                "end": 56,
+                "player_id": "10738",
+                "price": "",
+                "start": 0
+            }
+        ]
+    }
+]

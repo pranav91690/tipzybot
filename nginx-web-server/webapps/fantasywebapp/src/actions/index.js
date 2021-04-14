@@ -36,7 +36,7 @@ export const setAuthState = (authState) => {
 };
 
 export const getAllLeagues = () => async (dispatch) => {
-  const response = await BackEnd.get("api/leagues");
+  const response = await BackEnd.get("/api/leagues");
 
   dispatch({
     type: GET_ALL_LEAGUES,
@@ -45,7 +45,7 @@ export const getAllLeagues = () => async (dispatch) => {
 };
 
 export const getLeague = (league_id) => async (dispatch) => {
-  const response = await BackEnd.get(`api/league/${league_id}`);
+  const response = await BackEnd.get(`/api/league/${league_id}`);
 
   dispatch({
     type: GET_LEAGUE,
@@ -60,8 +60,8 @@ export const setLeague = (league) => {
   };
 };
 
-export const getScores = () => async (dispatch) => {
-  const response = await BackEnd.get("api/getscores");
+export const getScores = (id) => async (dispatch) => {
+  const response = await BackEnd.get(`/api/league/${id}/getscores`);
 
   dispatch({
     type: GET_SCORES,

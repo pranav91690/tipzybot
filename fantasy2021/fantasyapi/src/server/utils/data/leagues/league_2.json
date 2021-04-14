@@ -1,0 +1,1206 @@
+[
+    {
+        "_id": "2_Dhruv",
+        "league_num": 2,
+        "owner": "Dhruv",
+        "players": [
+            {
+                "end": 60,
+                "player_id": "11813",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "587",
+                "price": "3.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10420",
+                "price": "4",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1446",
+                "price": "4",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1593",
+                "price": "2",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11808",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12926",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9311",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8733",
+                "price": "5.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8271",
+                "price": "2",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "2258",
+                "price": "8",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7662",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1739",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6507",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10225",
+                "price": "1.5",
+                "start": 0
+            }
+        ]
+    },
+    {
+        "_id": "2_freeagent",
+        "league_num": 2,
+        "owner": "freeagent",
+        "players": [
+            {
+                "end": 60,
+                "player_id": "6311",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "413",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1448",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11623",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "242",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6692",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10100",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8925",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "19253",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "265",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11675",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "527",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6667",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1844",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9603",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7836",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13483",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6258",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11595",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13521",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9428",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12094",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1447",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9789",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "2250",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13252",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8808",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6670",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9522",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11893",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7990",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1454",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9781",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "702",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10484",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1858",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "15516",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9244",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12930",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10896",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9204",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9012",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8257",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10917",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7736",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12345",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8118",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8281",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "145",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9443",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8846",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "2276",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8292",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10551",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10692",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8944",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12092",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "15861",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "75",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10947",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1601",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7752",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "657",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11311",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12344",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8983",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "466",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14565",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13747",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6315",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12087",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13534",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1451",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8182",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7774",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7625",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "15749",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9429",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6319",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6660",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14452",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9427",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1437",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8107",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9785",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10280",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10226",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10260",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14254",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12779",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8796",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13217",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11404",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6532",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14659",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12226",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12630",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8358",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12305",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13940",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6349",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10045",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10954",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9746",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13135",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6327",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13136",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9617",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12627",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11540",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9863",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13494",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10353",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13537",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14696",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8709",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10636",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12669",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10945",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10364",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14606",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13162",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6283",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10809",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9025",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11172",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9715",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10808",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6262",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8175",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9441",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8642",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6326",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1836",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "14628",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10213",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12089",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8204",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6250",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1851",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "3007",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12086",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1465",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1807",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1828",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10267",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10952",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8356",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7906",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10357",
+                "price": "",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "12071",
+                "price": "",
+                "start": 0
+            }
+        ]
+    },
+    {
+        "_id": "2_Ram",
+        "league_num": 2,
+        "owner": "Ram",
+        "players": [
+            {
+                "end": 60,
+                "player_id": "7825",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8683",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10744",
+                "price": "9",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9585",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "624",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "576",
+                "price": "4",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10276",
+                "price": "4",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8117",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "2195",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7909",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8333",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1413",
+                "price": "10.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "13088",
+                "price": "3",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7910",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "1726",
+                "price": "7",
+                "start": 0
+            }
+        ]
+    },
+    {
+        "_id": "2_Kots",
+        "league_num": 2,
+        "owner": "Kots",
+        "players": [
+            {
+                "end": 60,
+                "player_id": "8989",
+                "price": "4",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "544",
+                "price": "2.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11427",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8095",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "7915",
+                "price": "5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9647",
+                "price": "4.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8520",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "247",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9406",
+                "price": "1.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "6557",
+                "price": "7.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "9693",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "11195",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "370",
+                "price": "5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "8313",
+                "price": "0.5",
+                "start": 0
+            },
+            {
+                "end": 60,
+                "player_id": "10738",
+                "price": "7.5",
+                "start": 0
+            }
+        ]
+    }
+]

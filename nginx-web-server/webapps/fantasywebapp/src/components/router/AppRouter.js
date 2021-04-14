@@ -35,16 +35,13 @@ const AppRouter = (props) => {
     <Router>
       <Switch>
         <Route path="/league/:leagueid">
-          <Leagues />
+          <Scores />
         </Route>
         <Route path="/createleague">
           <CreateLeagueView />
         </Route>
-        <Route path="/getscores">
-          <Scores />
-        </Route>
         <Route path="/">
-          <Scores />
+          <LeagueList />
         </Route>
       </Switch>
     </Router>

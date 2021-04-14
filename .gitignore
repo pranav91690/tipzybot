@@ -12,6 +12,17 @@ nginx-web-server/webapps/fantasywebapp/package-lock.json
 nginx-web-server/webapps/fantasywebapp/yarn.lock
 nginx-web-server/webapps/fantasywebapp/README.md
 
+
+nginx-web-server/webapps/flowrate/node_modules/*
+nginx-web-server/webapps/flowrate/.vscode
+nginx-web-server/webapps/flowrate/*.log*
+nginx-web-server/webapps/flowrate/.DS_Store
+nginx-web-server/webapps/flowrate/.eslintcache
+nginx-web-server/webapps/flowrate/package-lock.json
+nginx-web-server/webapps/flowrate/yarn.lock
+nginx-web-server/webapps/flowrate/README.md
+
+
 # Ignore the mongodb folder!! <-- As it contains only the data
 mongo/data/
 
