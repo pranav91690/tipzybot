@@ -84,7 +84,7 @@ async def getLeagueScores(request):
                 end = int(playersMap[player_id]["end"])
                 match_num = int(matchesMap[score["match_id"]])
 
-                if start < match_num < end:
+                if start <= match_num <= end:
                     points = calculatePoints(score)
 
                     if not owner_name in cumulative_points:
