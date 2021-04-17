@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/scores/ScoresList.css"],"names":[],"mappings":"AAAA,sCACE,uBACF","file":"main.e635fbc9.chunk.css","sourcesContent":[".ui.accordion tbody.ui.content.active {\n  display: table-row-group;\n}\n"]}

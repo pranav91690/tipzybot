@@ -12,6 +12,24 @@ def calculatePoints(stats):
     #     # wickets * 25
     #     # balls - runs
 
+    division = {
+        "runs" : "batting",
+        "bat_milestone" : "batting",
+        "fours" : "batting",
+        "sixes" : "batting",
+        "sr" : "batting",
+        "duck" : "batting",
+        "catches" : "fielding",
+        "runouts" : "fielding",
+        "stumpings" : "fielding",
+        "wickets" : "bowling",
+        "bowl_milestone" : "bowling",
+        "econ_rate" : "bowling",
+        "maidens" : "bowling",
+        "run_penalty" : "bowling",
+        "mom" : "awards"
+    }
+
     runs, bat_milestone, fours, sixes, sr, duck, catches, runouts, stumpings, wickets, bowl_milestone, econ_rate, maidens, run_penalty, mom = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
     # print(stats)
@@ -105,12 +123,29 @@ def calculatePoints(stats):
         "mom" : mom
     }
 
+    new_categories = {}
+
+    for k,v in final_points.items():
+        print(division[k])
+        if not division[k] in new_categories:
+            new_categories[division[k]] = 0
+
+        new_categories[division[k]] += v
+
+
     total = sum(final_points.values())
     non_zero_cats = dict(filter(lambda v : v[1] != 0, final_points.items()))
+
+
+    # return {
+    #     "name" : stats["name"].strip(),
+    #     "points" : total,
+    #     "categories" : non_zero_cats
+    # }
 
 
     return {
         "name" : stats["name"].strip(),
         "points" : total,
-        "categories" : non_zero_cats
+        "categories" : new_categories
     }

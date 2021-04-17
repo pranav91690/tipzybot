@@ -1,0 +1,3 @@
+.ui.accordion tbody.ui.content.active {
+  display: table-row-group;
+}

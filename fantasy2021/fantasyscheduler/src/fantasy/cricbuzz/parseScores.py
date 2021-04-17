@@ -28,9 +28,11 @@ def updateBowlingInfo(playerId, bowlingInfo,profileMap):
 
 def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firstNames):
     re_run_out = "run out \((.+\/?)\)"
-    re_catch = "c (.+) b .+"
+    # re_catch = "c (.+) b .+"
+    re_catch = "c (?:\(sub\))?(.+) b .+"
     re_stump = "st (.+) b .+"
     re_cbolwed = "c and b (.+)"
+
 
     res = OrderedDict()
     res["cbowled"] = re_cbolwed
@@ -46,6 +48,9 @@ def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firs
             players = list(fielders.split('/'))
 
             for player in players:
+                if "sub" in player:
+                    player = player.split("[")[1].split("]")[0]
+
                 p = player.strip().lower()
                 if p in fullNames:
                     updateFieldingInfo(fullNames[p],k,profileMap)
