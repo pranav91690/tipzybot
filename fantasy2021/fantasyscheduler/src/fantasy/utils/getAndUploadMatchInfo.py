@@ -1,9 +1,8 @@
-from fantasy.db.mongo import addMatches
 import requests
 from bs4 import BeautifulSoup
 
-def addAllMatches():
-    r = requests.get("https://www.cricbuzz.com/cricket-series/3472/indian-premier-league-2021/matches")
+def getMatchInfo():
+    r = requests.get("https://www.cricbuzz.com/cricket-series/4061/indian-premier-league-2022/matches")
     soup = BeautifulSoup(r.content, "html.parser")
 
     div_tags = soup.find_all("div")
@@ -40,4 +39,6 @@ def addAllMatches():
             match["number"] = match_number
             match_number += 1
             matches.append(match)
-    addMatches(matches)
+
+
+    return matches

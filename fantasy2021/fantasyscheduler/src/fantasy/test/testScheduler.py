@@ -4,6 +4,7 @@ from fantasy.db.mongo import getMatches
 
 india = pytz.timezone('Asia/Calcutta')
 matches = getMatches()
+
 for match in matches:
     # print(match)
     ts = int(match["timestamp"])

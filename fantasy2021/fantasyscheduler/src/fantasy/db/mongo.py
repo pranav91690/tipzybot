@@ -1,12 +1,13 @@
 from pymongo import MongoClient, UpdateOne
 client = MongoClient('mongodb://mongo:27017/')
-fantasy = client["fantasy2021"]
+fantasy = client["ipl2022"]
 
 def addMatches(matches):
     operations = []
     for match in matches:
         operations.append(UpdateOne({"_id" : match["_id"]},{"$set" : match}, upsert=True))
 
+    fantasy.matches.drop()
     fantasy.matches.bulk_write(operations)
 
 def addPlayers(players):

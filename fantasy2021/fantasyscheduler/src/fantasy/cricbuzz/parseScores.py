@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from collections import OrderedDict
 import pytz
-from fantasy.db.mongo import addScores
+
 
 
 india = pytz.timezone('Asia/Calcutta')
@@ -168,7 +168,7 @@ def getMom(url, profileMap):
             player_id = attrs_2["href"].split("/")[2].strip()
             updateMom(player_id, profileMap)
 
-def getScores(match_id,scores_url,mom_url,insert):
+def getScores(match_id,scores_url,mom_url):
     print("Getting Score")
 
     profileMap = {}
@@ -261,9 +261,6 @@ def getScores(match_id,scores_url,mom_url,insert):
 
         scores = []
 
-        print("Profile Map Length")
-        print(len(profileMap))
-
         for k,v in profileMap.items():
             v.update({
                 "match_id" : match_id,
@@ -273,10 +270,10 @@ def getScores(match_id,scores_url,mom_url,insert):
 
             scores.append(v)
 
-        if insert:
-            addScores(scores)
+        # if insert:
+        #     addScores(scores)
 
-        print(len(scores))
+        print("Got " + str(len(scores)))
 
         return scores
     except Exception as e:
