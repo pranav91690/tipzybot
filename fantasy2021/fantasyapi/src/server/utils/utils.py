@@ -3,6 +3,9 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
+
+
+
 def getPlayers():
     players = []
     with open('server/utils/data/players.json') as json_file:
@@ -50,7 +53,7 @@ def getMatches():
                 parts = link.split("/")
                 match["_id"] = str(parts[2])
                 match["scorecard"] = "https://www.cricbuzz.com" + "/live-cricket-scorecard/" + "/".join(parts[2:])
-                match["mom"] = "https://www.cricbuzz.com" + "/live-cricket-scores/" + "/".join(parts[2:])
+                match["mom"] = "https://www.cricbuzz.com" + "/live-cricket-points/" + "/".join(parts[2:])
 
         for tag in span_tags:
             if "class" in tag.attrs and "schedule-date" in tag.attrs["class"]:

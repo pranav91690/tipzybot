@@ -1,6 +1,6 @@
 from aiohttp import web
 from bson import json_util
-from server.utils.utils import getLeagues,getPlayers, getMatches
+from server.utils.utils import getLeagues,getPlayers
 from pymongo import UpdateOne
 
 async def addPlayers(request):
@@ -54,7 +54,7 @@ async def addMatches(request):
 
         mongo_client = request.app['mongoclient']
         matches_collection = mongo_client["fantasy2021"]["matches"]
-        matches = getMatches()
+        matches = []
 
         operations = []
         for match in matches:
@@ -68,6 +68,20 @@ async def addMatches(request):
 
         return web.Response(text=json_util.dumps(response),content_type="application/json")
 
+    except Exception as e:
+        error_message = {"error": str(e)}
+        return web.HTTPInternalServerError(text=json_util.dumps(error_message), content_type="application/json")
+
+async def get_matches(request):
+    try:
+        print("Getting Matches")
+        mongo_client = request.app['mongoclient']
+        matches_collection = mongo_client["ipl2022"]["matches"]
+        matches =  []
+        async for match in matches_collection.find():
+            matches.append(match)
+
+        return web.Response(text=json_util.dumps(matches), content_type="application/json")
     except Exception as e:
         error_message = {"error": str(e)}
         return web.HTTPInternalServerError(text=json_util.dumps(error_message), content_type="application/json")

@@ -2,12 +2,12 @@ from aiohttp import web
 from bson import json_util
 from server.points.calculatePoints import calculatePoints
 
-async def getScores(request):
+async def get_points(request):
     print("Got Request to Get Score")
     try:
         mongo_client = request.app['mongoclient']
-        players_collection = mongo_client["fantasy2021"]["players"]
-        scores_collection = mongo_client["fantasy2021"]["scores"]
+        players_collection = mongo_client["ipl2022"]["players"]
+        scores_collection = mongo_client["fantasy2021"]["points"]
 
         owners = ["Ram", "Pranav", "Avadesh", "Sauri", "Sree", "Sheky"]
         cumulative_points = {}
