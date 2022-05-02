@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - /c/Users/pachanta/tipzybot/tipzybot/data/db:/data/db
+  
+  
+  scheduler:
+    build: ./fantasy2021/fantasyscheduler/
+  
+  api:
+    build: ./fantasy2021/fantasyapi/
+    ports:
+      - "8080:8080"
+
+  web:
+    build: ./nginx-web-server/
+    ports:
+      - "80:80"

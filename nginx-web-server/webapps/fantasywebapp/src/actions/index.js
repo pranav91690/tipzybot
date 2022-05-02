@@ -6,6 +6,7 @@ import {
   GET_LEAGUE,
   SET_LEAGUE,
   GET_SCORES,
+  GET_MATCHES,
 } from "./types";
 import BackEnd from "../api/BackEnd";
 
@@ -36,7 +37,7 @@ export const setAuthState = (authState) => {
 };
 
 export const getAllLeagues = () => async (dispatch) => {
-  const response = await BackEnd.get("/api/leagues");
+  const response = await BackEnd.get("/api/league");
 
   dispatch({
     type: GET_ALL_LEAGUES,
@@ -53,11 +54,13 @@ export const getLeague = (league_id) => async (dispatch) => {
   });
 };
 
-export const setLeague = (league) => {
-  return {
+export const setLeague = (league_id, league) => async (dispatch) => {
+  const response = await BackEnd.put(`/api/league/${league_id}`, league);
+
+  dispatch({
     type: SET_LEAGUE,
-    payload: league,
-  };
+    payload: response.data,
+  });
 };
 
 export const getScores = (id) => async (dispatch) => {
@@ -65,6 +68,15 @@ export const getScores = (id) => async (dispatch) => {
 
   dispatch({
     type: GET_SCORES,
+    payload: response.data,
+  });
+};
+
+export const getMatches = () => async (dispatch) => {
+  const response = await BackEnd.get("/api/match");
+
+  dispatch({
+    type: GET_MATCHES,
     payload: response.data,
   });
 };

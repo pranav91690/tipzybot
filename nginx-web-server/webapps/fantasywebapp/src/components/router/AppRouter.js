@@ -8,20 +8,22 @@ import {
 import TeamView from "../team/TeamView";
 import CreateLeagueView from "../home/CreateLeagueView";
 import CreateTeamView from "../league/CreateTeamView";
+import ManageLeague from "../league/ManageLeague";
 import LeagueList from "../home/LeagueList";
 import League from "../league/League";
-import Scores from "../scores/Scores";
 
 const Leagues = () => {
-  let { path, url } = useRouteMatch();
-
+  let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route path={`${path}/team/:teamid`}>
+      {/* <Route path={`${path}/team/:teamid`}>
         <TeamView />
       </Route>
       <Route path={`${path}/createteam`}>
         <CreateTeamView />
+      </Route> */}
+      <Route path={`${path}/manage`}>
+        <ManageLeague />
       </Route>
       <Route path={`${path}`}>
         <League />
@@ -35,12 +37,12 @@ const AppRouter = (props) => {
     <Router>
       <Switch>
         <Route path="/league/:leagueid">
-          <Scores />
+          <Leagues />
         </Route>
-        <Route path="/createleague">
+        {/* <Route path="/createleague">
           <CreateLeagueView />
-        </Route>
-        <Route path="/">
+        </Route> */}
+        <Route exact path="/">
           <LeagueList />
         </Route>
       </Switch>

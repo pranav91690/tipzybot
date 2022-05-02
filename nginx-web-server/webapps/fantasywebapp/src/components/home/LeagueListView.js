@@ -12,16 +12,11 @@ class LeagueListView extends React.Component {
   // Here will have to create the list of leagues and button to create a new league
 
   render() {
-    const map = {
-      1: "Operation Kill Sree",
-      2: "The OG",
-    };
-
     const leagues = this.props.leagues.map((league) => {
       return (
-        <div class="row" key={league}>
-          <div class="column" key={league}>
-            <Link to={`/league/${league}`}>{map[league]}</Link>
+        <div class="row" key={league.$oid}>
+          <div class="column" key={league["_id"].$oid}>
+            <Link to={`/league/${league["_id"].$oid}`}>{league.name}</Link>
           </div>
         </div>
       );

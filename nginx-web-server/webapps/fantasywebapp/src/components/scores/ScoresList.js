@@ -2,7 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { getScores } from "../../actions/index";
 import "./ScoresList.css";
-import { Accordion, Icon, Item, Table } from "semantic-ui-react";
+import { Accordion, Icon, Item, Table, Grid, Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import _ from "lodash";
 
 class ScoresList extends React.Component {
@@ -100,11 +101,18 @@ class ScoresList extends React.Component {
         <div class="row"></div>
         <div class="row">
           <div class="column">
+            <Link to={`${this.props.url}/manage`}>
+              <Button>Manage</Button>
+            </Link>
+          </div>
+        </div>
+        {/* <div class="row">
+          <div class="column">
             <Accordion styled fluid>
               {scores}
             </Accordion>
           </div>
-        </div>
+        </div> */}
         <div class="row"></div>
         <div class="row"></div>
         <div class="row"></div>
@@ -113,7 +121,7 @@ class ScoresList extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getScores(this.props.leagueid);
+    // this.props.getScores(this.props.leagueid);
   }
 }
 

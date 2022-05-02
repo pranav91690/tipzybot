@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/league/LeagueView.css"],"names":[],"mappings":"AAAA,sCACI,uBACF","file":"main.1a41b321.chunk.css","sourcesContent":[".ui.accordion tbody.ui.content.active {\r\n    display: table-row-group;\r\n  }\r\n  "]}

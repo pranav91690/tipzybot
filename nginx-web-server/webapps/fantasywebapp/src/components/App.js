@@ -3,6 +3,7 @@ import { signIn, setAuthState } from "../actions";
 import { connect } from "react-redux";
 import AppRouter from "./router/AppRouter";
 import Loading from "./util/Loading";
+import { Grid } from "semantic-ui-react";
 
 // This is a function based component
 // Ideally if the user is signed In, display the home page or the previous saved state, whatever!!
@@ -22,11 +23,14 @@ class App extends React.Component {
     // }else{
     //     return <AppRouter isSignedIn={this.props.isSignedIn}></AppRouter>
     // }
-    console.log("App Loaded");
     return (
-      <div class="ui container">
-        <AppRouter></AppRouter>
-      </div>
+      <Grid>
+        <Grid.Row>
+          <Grid.Column>
+            <AppRouter></AppRouter>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }

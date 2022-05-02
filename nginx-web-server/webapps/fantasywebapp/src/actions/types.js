@@ -7,3 +7,5 @@ export const GET_LEAGUE = "GET_LEAGUE";
 export const SET_LEAGUE = "SET_LEAGUE";
 
 export const GET_SCORES = "GET_SCORES";
+
+export const GET_MATCHES = "GET_MATCHES";

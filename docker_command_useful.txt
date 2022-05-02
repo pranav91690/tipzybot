@@ -7,3 +7,9 @@ docker run -it --rm -d -p 80:80 --name web -v ~/nginx/site-content:/usr/share/ng
 
 docker run -it --rm -d -p 8090:80 --name web -v /Users/pranav/nginx-fantasy-2021/nginx-conf/nginx.conf:/usr/local/nginx/conf/nginx.conf:ro -v /Users/pranav/nginx-fantasy-2021/site-content:/usr/share/nginx/html  nginx
 docker run -it --rm -d -p 8090:80 --name web -v /Users/pranav/nginx-fantasy-2021/nginx-conf/nginx.conf:/etc/nginx/conf.d/default.conf:ro -v /Users/pranav/nginx-fantasy-2021/site-content:/usr/share/nginx/html  --network=my-bridge-network nginx
+
+
+C:\Users\pachanta\tipzybot\tipzybot\data
+//C:/Users/pachanta/tipzybot/tipzybot/data
+
+docker run --name fantasymongo  -p 27015-27017:27015-27017 -v //c/Users/pachanta/tipzybot/tipzybot/data:/data/db -d --network=my-bridge-network -e mongo
