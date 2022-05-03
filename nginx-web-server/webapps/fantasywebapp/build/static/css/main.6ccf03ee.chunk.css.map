@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/league/LeagueView.css"],"names":[],"mappings":"AAAA,sCACI,uBACF,CAEA,QAAS,mBAAqB","file":"main.6ccf03ee.chunk.css","sourcesContent":[".ui.accordion tbody.ui.content.active {\r\n    display: table-row-group;\r\n  }\r\n\r\n  .groove {border-style: groove;}  "]}
