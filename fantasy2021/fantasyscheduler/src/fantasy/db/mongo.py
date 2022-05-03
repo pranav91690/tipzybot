@@ -22,8 +22,12 @@ def getMatches():
     return fantasy.matches.find({})
 
 def addScores(scores):
-    operations = []
-    for score in scores:
-        operations.append(UpdateOne({"_id" : score["_id"]},{"$set" : score}, upsert=True))
+    try:
+        operations = []
+        for score in scores:
+            print(score)
+            operations.append(UpdateOne({"_id" : score["_id"]},{"$set" : score}, upsert=True))
 
-    fantasy.scores.bulk_write(operations)
+        fantasy.scores.bulk_write(operations)
+    except Exception as e:
+        print(e)

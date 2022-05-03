@@ -27,9 +27,9 @@ def start(sched):
 
         if (end > now):
             if start < now < end:
-                sched.add_job(getScores,'interval', args=args, seconds=15,end_date=job[4])
+                sched.add_job(getAndAddScores,'interval', args=args, seconds=15,end_date=job[4])
             else:
-                sched.add_job(getScores,'interval', args=args, seconds=15,
+                sched.add_job(getAndAddScores,'interval', args=args, seconds=15,
                               start_date=job[3], end_date=job[4])
         else:
             getAndAddScores(job[0],job[1],job[2])
