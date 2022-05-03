@@ -51,6 +51,11 @@ async def put_league(request):
     return web.json_response({'success' : result.acknowledged})
 
 
+async def getLeagueScoresByMatch(request):
+    id = request.match_info['league_id']
+
+    print("Got Request to Get Score By Match for league id {}".format(id))
+
 
 
 async def getLeagueScores(request):
@@ -68,6 +73,7 @@ async def getLeagueScores(request):
         league = await leagues_collection.find_one({'_id' : ObjectId(id)})
 
         cumulative_points = {}
+        pointsByMatch = {}
         scores_list = []
 
         matchesMap = {}
@@ -87,8 +93,15 @@ async def getLeagueScores(request):
                 end = int(playersMap[player_id]["end"])
                 match_num = int(matchesMap[score["match_id"]])
 
+                if not match_num in pointsByMatch:
+                    pointsByMatch[match_num] = {}
+                    for team in league["teams"]:
+                        pointsByMatch[match_num][team["name"]] = 0
+
                 if start <= match_num <= end:
                     points = calculatePoints(score)
+
+                    pointsByMatch[match_num][owner_name] += points["points"]
 
                     if not owner_name in cumulative_points:
                         cumulative_points[owner_name] = {}
@@ -166,9 +179,50 @@ async def getLeagueScores(request):
             scores_list.append(score)
 
 
+        response = {}
+        scoresbyMatch = []
+
+        colorMap = {
+            0 : "#34568B",
+            1 : "#FF6F61",
+            2 : "#6B5B95",
+            3 : "#88B04B",
+            4 : "#92A8D1",
+            5 : "#955251",
+            6 : "#B565A7",
+            7 : "#EFC050",
+            8 : "#E15D44",
+            9 : "#98B4D4"
+        }
+
+
+        parentIndex = 0
+        for matchNum,teams in pointsByMatch.items():
+            scoresArray = []
+            index = 0
+            for name,points in teams.items():
+                score = {}
+                score["id"] = index
+                score["title"] = name
+                if parentIndex == 0:
+                    score["value"] = points
+                else:
+                    score["value"] = points + scoresbyMatch[parentIndex-1][index]["value"]
+                score["color"] = colorMap[index]
+                index += 1
+                scoresArray.append(score)
+
+            scoresbyMatch.append(scoresArray)
+            parentIndex += 1
+
+
+
+
+        response["scoresbyowner"] = scores_list
+        response["scoresbymatch"] = scoresbyMatch
 
         print("Done Getting Score")
-        return web.Response(text=json_util.dumps(scores_list), content_type="application/json")
+        return web.Response(text=json_util.dumps(response), content_type="application/json")
 
     except Exception as e:
         print("Received an error while getting score -> " + str(e))

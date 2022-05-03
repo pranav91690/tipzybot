@@ -1,5 +1,5 @@
 .DS_Store
-nginx-web-server/nginx.conf
+# nginx-web-server/nginx.conf
 
 # Ignore the FantasyWeb App folders!!
 #nginx-web-server/webapps/fantasywebapp/build/*
@@ -25,6 +25,7 @@ nginx-web-server/webapps/flowrate/README.md
 
 # Ignore the mongodb folder!! <-- As it contains only the data
 mongo/data/
+data/
 
 # Ignore our local files
 fantasy2021/manually_managed_data_and_imp_files/*
