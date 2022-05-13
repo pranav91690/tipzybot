@@ -26,7 +26,7 @@ def updateBowlingInfo(playerId, bowlingInfo,profileMap):
     if playerId in profileMap:
         profileMap[playerId].update(bowlingInfo)
 
-def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firstNames):
+def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firstNames, displayNames):
     re_run_out = "run out \((.+\/?)\)"
     # re_catch = "c (.+) b .+"
     re_catch = "c (?:\(sub\))?(.+) b .+"
@@ -52,7 +52,9 @@ def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firs
                     player = player.split("[")[1].split("]")[0]
 
                 p = player.strip().lower()
-                if p in fullNames:
+                if player in displayNames:
+                    updateFieldingInfo(displayNames[player],k,profileMap)
+                elif p in fullNames:
                     updateFieldingInfo(fullNames[p],k,profileMap)
                 elif p in fLastNames:
                     updateFieldingInfo(fLastNames[p], k, profileMap)
@@ -67,7 +69,7 @@ def extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firs
         except:
             continue
 
-def extractBattingInfo(batting_tag, profileMap,fullNames,fLastNames,lastNames,firstNames):
+def extractBattingInfo(batting_tag, profileMap,fullNames,fLastNames,lastNames,firstNames,displayNames):
     meta = list(filter(lambda x: x != ' ', list(batting_tag.children)))
     try:
         batting_stats = [[meta[0].a.attrs['href'], meta[0].a.string.strip()], meta[1].span.string.strip(),
@@ -82,7 +84,7 @@ def extractBattingInfo(batting_tag, profileMap,fullNames,fLastNames,lastNames,fi
         sixes = batting_stats[5].strip()
 
 
-        extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firstNames)
+        extractFieldingData(dismissal,profileMap,fullNames,fLastNames,lastNames,firstNames,displayNames)
 
         stats = {}
         # stats["profile_num"] = profile_num
@@ -130,7 +132,7 @@ def extractBowlingInfo(bowling_tag, profileMap):
     except:
         return
 
-def extractInningsData(innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames):
+def extractInningsData(innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames, displayNames):
     # Get the Batting, Bowling,Fielding Info
     batting_tags = [] # This will contain the fielding tags as well! <--- cool
     bowling_tags = []
@@ -146,7 +148,7 @@ def extractInningsData(innings_tag,profileMap,fullNames,fLastNames,lastNames,fir
                 bowling_tags.append(div_tag)
 
     for batting_tag in batting_tags:
-        extractBattingInfo(batting_tag,profileMap,fullNames,fLastNames,lastNames,firstNames)
+        extractBattingInfo(batting_tag,profileMap,fullNames,fLastNames,lastNames,firstNames,displayNames)
 
     for bowling_tag in bowling_tags:
         extractBowlingInfo(bowling_tag,profileMap)
@@ -168,6 +170,26 @@ def getMom(url, profileMap):
             player_id = attrs_2["href"].split("/")[2].strip()
             updateMom(player_id, profileMap)
 
+
+def getDisplayNames(tag,displayNames):
+    a_tags = tag.find_all('a')
+    for a_tag in a_tags:
+        try:
+            attrs = a_tag.attrs
+            if 'href' in attrs and "profiles" in attrs['href']:
+                id = attrs["href"].split("/")[2].strip()
+
+                name = a_tag.contents[0].strip()
+                nameArray = name.split(" ")
+                if len(nameArray) > 1:
+                    name = " ".join(nameArray[:2])
+                displayNames[name] = id
+        except:
+            continue
+
+
+
+
 def getScores(match_id,scores_url,mom_url):
     print("Getting Score")
 
@@ -176,6 +198,7 @@ def getScores(match_id,scores_url,mom_url):
     fLastNames = {}
     lastNames = {}
     firstNames = {}
+    displayNames = {}
 
     try:
         r = requests.get(scores_url)
@@ -251,15 +274,23 @@ def getScores(match_id,scores_url,mom_url):
 
 
         if first_innings_tag:
-            extractInningsData(first_innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames)
+            getDisplayNames(first_innings_tag, displayNames)
+            extractInningsData(first_innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames, displayNames)
+
+
+
 
         if second_innings_tag:
             # Get the Batting, Bowling,Fielding Info
-            extractInningsData(second_innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames )
+            getDisplayNames(second_innings_tag, displayNames)
+            extractInningsData(second_innings_tag,profileMap,fullNames,fLastNames,lastNames,firstNames,displayNames)
+
 
         getMom(mom_url, profileMap)
 
         scores = []
+
+        print(displayNames)
 
         for k,v in profileMap.items():
             v.update({
